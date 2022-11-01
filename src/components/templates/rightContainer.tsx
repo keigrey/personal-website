@@ -3,7 +3,7 @@ import CloudWave from "../molecules/cloudWave";
 
 export default function RightContainer() {
   return (
-    <div className="right-container">
+    <div id="right-container">
       <CloudWave />
       <Moon />
     </div>
