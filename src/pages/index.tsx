@@ -1,11 +1,23 @@
-import LeftContainer from "../components/templates/leftContainer";
-import RightContainer from "../components/templates/rightContainer";
+import { css } from "@mui/material";
+import type { NextPage } from "next";
+import PageTitle from "../src/components/PageTitle";
+import ThemeUpdater from "../src/components/ThemeUpdater";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <div id="container">
-      <LeftContainer />
-      <RightContainer />
-    </div>
+    <main
+      css={css`
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      `}
+    >
+      <PageTitle />
+      <ThemeUpdater />
+    </main>
   );
-}
+};
+
+export default Home;
